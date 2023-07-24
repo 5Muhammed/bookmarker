@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- CSS Linked Fiels -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- ========== Start Main ========== -->
+    <main class="w-75 mx-auto">
+        <h1 class="my-5">Bookmarker</h1>
+        <section class="site-form py-3 px-3" id="siteForm">
+            <h2 class="pb-4 text-center fs-3">
+                Bookmark your favorite sites
+            </h2>
+            <div class="input-field pb-3" id="inputField">
+                <label for="siteName" class="pb-2 fw-bold">
+                    <i class="fa-solid fa-book-bookmark px-1"></i>
+                    Site Name
+                </label>
+                <input type="text" class="site-name form-control" id="siteName" placeholder="Bookmark Name">
+            </div>
+            <div class="input-field pb-3" id="inputField">
+                <label for="siteUrl" class="pb-2 fw-bold">
+                    <i class="fa-solid fa-link px-1"></i> 
+                    Site URL
+                </label>
+                <input type="text" class="site-url form-control" id="siteUrl" placeholder="Bookmark Name">
+            </div>
+            <button type="button" class="submit-button rounded px-5 py-2 my-2" id="submitButton"
+                onclick="addSite()">Submit</button>
+        </section>
+        <section class="site-tabel pt-3" id="siteTabel">
+            <table class="w-100 bg-white">
+                <thead>
+                    <tr class="text-center">
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+
+                    </tr>
+                </thead>
+                <tbody class="tabel-body" id="tabelBody">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- ========== End Main ========== -->
+
+    <!-- JS Linked Fiels -->
+    <script src="./js/all.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

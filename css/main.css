@@ -1,0 +1,83 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+::selection{
+    background-color: #fec260;
+}
+body{
+    background-color: #F7ECDE;
+}
+
+main h1{
+    width: fit-content;
+    position: relative;
+    padding: 0px;
+    font-size: 3.125rem;
+    margin-inline: auto;
+    font-family: 'Pacifico', cursive;
+}
+
+main h1::after{
+    content: "";
+    background-color: #fec260;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+    z-index: -1;
+    transition: 400ms;
+}
+
+main h1:hover::after{
+    height: 40px;
+
+}
+
+main .site-form{
+    border-block: 2px dotted ;
+}
+
+main .site-form .submit-button{
+    display: block;
+    background-color: #d1512d;
+    color: #fff;
+    border: none;
+    margin-inline: auto;
+    transition: 400ms;
+}
+main .site-form h2{
+    width: fit-content;
+    margin-inline: auto;
+    background: linear-gradient(to right, #45A55B, #B3AC49);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main .site-form h2::before{
+    content: "\f02e";
+    font: var(--fa-font-solid)
+}
+main .site-form h2::after{
+    content: "\f02e";
+    font: var(--fa-font-solid)
+}
+
+main .site-form .submit-button:hover{
+    background-color: #a03315;
+}
+
+main .site-tabel tr > *{
+    padding: 10px;
+}
+
+
+.my-alert{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
